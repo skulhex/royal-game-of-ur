@@ -118,7 +118,7 @@ class Game:
             print(f"[{i}] {start} → {end}{suffix}")
 
         while True:
-            choice = input("Выберите ход (new или номер): ")
+            choice = input("Выберите номер фишки: ")
             if choice.isdigit() and int(choice) in movable:
                 piece_idx = int(choice)
                 extra = self.move_piece(player, piece_idx, roll)
